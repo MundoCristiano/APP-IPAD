@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    grid-auto-rows: minmax(245px, auto);
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: dense;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+        grid-auto-rows: minmax(165px, auto);
+    }
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.7rem;
+    }
+}
+
+.grid-items{
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+ul {
+    padding: 5px;
+    background: url('https://archive.org/download/MC-FONDO/fondo.png');
+    border-radius: 10px;
+}
+
+.pie {
+    height: 40%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.iconos {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .iconos {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+.la-biblia {
+    border: solid 1px cyan;
+}
+
+.plan {
+    border: solid 1px lime;
+}
+
+.devocionales {
+    border: solid 1px blue;
+}
+
+.libros {
+    border: solid 1px red;
+}
+
+.articulos {
+    border: solid 1px yellow;
+}
+
+.musica {
+    border: solid 1px orange;
+}
+
+.radios {
+    border: solid 1px fuchsia;
+}
+
+.canales {
+    border: solid 1px green;
+}
+
+.superlibro {
+    border: solid 1px lightblue;
+}
+
+.peliculas {
+    border: solid 1px orangered;
+}
+
+.cortometrajes {
+    border: solid 1px darkmagenta;
+}
+
+.videos {
+    border: solid 1px palevioletred;
+}
+
+.tarjetas {
+    border: solid 1px teal;
+}
+
+.imagenes {
+    border: solid 1px yellowgreen;
+}
+.palabras {
+    border: solid 1px chocolate;
+}
+
+</style>
+<body>
+    <div class="grid-container">
+
+        <ul class="la-biblia">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/BIBLIA-MENU/"><img class="iconos" src="https://archive.org/download/MC-FONDO/20.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>LA BIBLIA</li>
+        </ul>
+
+        <ul class="plan">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/PLAN-DE-LECTURA/"><img class="iconos" src="https://archive.org/download/MC-FONDO/25.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>PLAN DE LECTURA BÍBLICA</li>
+        </ul>
+
+        <ul class="devocionales">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/DEVOCIONALES/"><img class="iconos" src="https://archive.org/download/MC-FONDO/7.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>DEVOCIONALES</li>
+        </ul>
+
+        <ul class="libros">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/LIBROS/"><img class="iconos" src="https://archive.org/download/MC-FONDO/11.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>LIBROS</li>
+        </ul>
+
+        <ul class="articulos">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/ARTICULOS/"><img class="iconos" src="https://archive.org/download/MC-FONDO/12.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>ARTÍCULOS</li>
+        </ul>
+
+        <ul class="musica">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/MUSICA/"><img class="iconos" src="https://archive.org/download/MC-FONDO/22.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>MÚSICA</li>
+        </ul>
+
+        <ul class="radios">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/RADIOS/"><img class="iconos" src="https://archive.org/download/MC-FONDO/26.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>RADIOS ONLINE</li>
+        </ul>
+
+        <ul class="canales">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/CANALES-DE-TV/"><img class="iconos" src="https://archive.org/download/MC-FONDO/4.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>CANALES DE TV</li>
+        </ul>
+
+        <ul class="superlibro">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/SUPERLIBRO-3D-SERIE/"><img class="iconos" src="https://archive.org/download/MC-FONDO/27.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>SUPERLIBRO 3D</li>
+        </ul>
+
+        <ul class="peliculas">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/PELICULAS/"><img class="iconos" src="https://archive.org/download/MC-FONDO/16.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>PELÍCULAS</li>
+        </ul>
+
+        <ul class="cortometrajes">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/MENU-MINISERIES/"><img class="iconos" src="https://archive.org/download/MC-FONDO/6.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>CORTOMETRAJES</li>
+        </ul>
+
+        <ul class="videos">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/MENU-SERIES/"><img class="iconos" src="https://archive.org/download/MC-FONDO/24.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>SERIES</li>
+        </ul>
+
+        <ul class="tarjetas">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/TARJETAS/"><img class="iconos" src="https://archive.org/download/MC-FONDO/28.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>TARJETAS</li>
+        </ul>
+
+        <ul class="imagenes">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/IMAGENES/"><img class="iconos" src="https://archive.org/download/MC-FONDO/17.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>IMÁGENES</li>
+        </ul>
+
+        <ul class="palabras">
+            <li class="grid-items"><a href="https://mundocristiano.github.io/PALABRAS-DE-ALIENTO/"><img class="iconos" src="https://archive.org/download/MC-FONDO/23.png" alt=""></a></li>
+            <li class="grid-items pie"><a href=""></a>PALABRAS DE ALIENTO</li>
+        </ul>
+</div>  
+</body>
+</html>
